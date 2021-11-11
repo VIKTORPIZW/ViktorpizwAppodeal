@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onRewardedVideoShown() {
                 showToast("Show Video")
+
             }
 
             override fun onRewardedVideoShowFailed() {
