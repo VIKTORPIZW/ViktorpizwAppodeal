@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button
+        android:id="@+id/banners_btn"
+        android:text="@string/txt_show_banner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/interstitials_btn"
+        style="@style/button_horizontal"
+
+        />
+
+    <Button
+        android:id="@+id/interstitials_btn"
+        android:text="@string/txt_show_interstitials"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banners_btn"
+        app:layout_constraintBottom_toTopOf="@id/rewarded_btn"
+        style="@style/button_horizontal"
+     />
+
+    <Button
+        android:id="@+id/rewarded_btn"
+        android:text="@string/txt_rewarded_video"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/native_btn"
+        app:layout_constraintTop_toBottomOf="@id/interstitials_btn"
+        style="@style/button_horizontal"
+        />
+
+    <Button
+        android:id="@+id/native_btn"
+        android:text="@string/txt_show_native"
+        app:layout_constraintTop_toBottomOf="@id/rewarded_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/button_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/interstitials_btn"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.appodeal.ads.BannerView
+        android:id="@+id/appodeal_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

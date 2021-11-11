@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Appodeal Test</string>
+    <string name="txt_show_banner">Show Banner</string>
+    <string name="txt_show_interstitials">show interstitials</string>
+    <string name="txt_rewarded_video">Rewarded Video</string>
+    <string name="txt_show_native">Show Native</string>
+    <string name="txt_from_item">Text From Item</string>
+</resources>
