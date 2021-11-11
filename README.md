@@ -22,4 +22,4 @@ To solve this problem, you must change the logic of the ad display.
 Move the Appodeal.show (<youractivity>, Appodeal.INTERSTITIAL)
 function to the part of the code that is responsible for navigating between Activities or Fragments.
 If you have any questions, we will be happy to help you.
-Best regards, Appodeal team!
+Best regards,Viktor!
